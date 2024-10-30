@@ -1,0 +1,114 @@
+body {
+    font-family: 'SofadiOne';
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f8f4e3, #ffe6b2);
+    color: #5b3e00;
+}
+
+@font-face {
+    font-family: "SofadiOne";
+    src: url("file:///Users/xiangli/Desktop/Kevin_c1if24/entries/entry2/fonts/SofadiOne-Regular.ttf");
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 5px solid #7f5f00;
+    font-family: 'Courier New', monospace;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+
+
+.navbar a {
+    text-decoration: none;
+    color: #5b3e00;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #7f5f00;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+main {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #7f5f00;
+    border-bottom: 2px solid #7f5f00;
+    padding-bottom: 5px;
+    margin-top: 40px; 
+    font-size: 2em;
+
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.content-container p {
+    flex: 1;
+    margin-right: 20px;
+    line-height: 1.6;
+}
+
+.intro, .history, .recipe {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.intro:hover, .history:hover, .recipe:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffcc00;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #7f5f00;
+}
+
+footer p {
+    margin: 0;
+    font-style: italic;
+    color: #5b3e00;
+}
+
+.croissant-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 2em;
+}

@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe6e6 30%, #cce7ff 70%);
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    color: #ff6600;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.recipe {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 15px;
+    max-width: 600px;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.recipe:hover {
+    transform: translateY(-5px);
+}
+
+.recipe img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+h2 {
+    color: #ff6600;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .recipe {
+        flex-direction: column;
+    }
+
+    .recipe img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Changed to cover */
+}
+
+header {
+    background-color: #ffcc00;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    z-index: 1; /* Changed to a proper number */
+}
+
+h1 { 
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+    color: #000000;
+    text-shadow: 1px 1px 2px #fff;
+    text-align: center;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.introduction, .origin, .cultural-significance, .evolution {
+    display: flex;
+    flex-direction: column; /* Change to column to stack elements */
+    align-items: center; /* Center items horizontally */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 15px;
+    max-width: 600px;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.introduction p, .origin p, .cultural-significance p, .evolution p {
+    text-align: center; /* Center text inside the paragraphs */
+}
+
+
+.introduction:hover, .origin:hover, .cultural-significance:hover, .evolution:hover {
+    transform: translateY(-5px);
+}
+
+.introduction img, .origin img, .cultural-significance img, .evolution img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+h2 {
+    color: #ff6600;
+    margin-top: 0;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .introduction, .origin, .cultural-significance, .evolution {
+        flex-direction: column;
+    }
+
+    .introduction img, .origin img, .cultural-significance img, .evolution img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+}

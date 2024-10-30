@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+h2 {
+  width: 100px;
+  height: 100px;
+  background: rgb(244, 147, 77);
+  transition:height 4000s;
+  position: absolute;
+  left: 500px;
+  top: 500px;
+  transition: 1000000000s;
+  opacity: 0.2;
+}
+
+h2:hover {
+  height: 1000000000px;
+  position: absolute;
+  transition: 10000s;
+  opacity: 1;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
+
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  transition: 2s;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+ 
+   
+
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div class="container">
+    <img src="cat1.png" alt="Avatar" class="image">
+    <div class="overlay">
+        <img src="cat2.png" alt="Avatar" class="image">
+        <h2></h2>
+    </div>
+  </div>
+  
+
+</body>
+</html>
+
+
