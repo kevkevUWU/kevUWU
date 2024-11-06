@@ -1,0 +1,202 @@
+* {
+  font-family: "Bungee", sans-serif;
+  color: #f1f1f1;
+}
+
+body {
+  background-color: #616ee7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+body h1 {
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+}
+
+body .hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 600px;
+  width: 400px;
+  overflow: hidden;
+
+}
+body .hamburger .bun {
+  z-index: 1;
+  height: 150px;
+  width: 350px;
+  background-color: #c1a541;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+body .hamburger .bun.top {
+  transform-origin: bottom right;
+  border-top-right-radius: 400px;
+  border-top-left-radius: 400px;
+  padding-top: 25px;
+}
+body .hamburger .bun.top .seeds {
+  position: absolute;
+  transition: 0.3s;
+}
+body .hamburger .bun.top .seeds .seed {
+  width: 12px;
+  height: 18px;
+  background-color: #ebebeb;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+body .hamburger .bun.top .seeds .seed a {
+  opacity: 0;
+  pointer-events: none;
+  font-family: "Work Sans", sans-serif;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 16px;
+  margin-top: -40px;
+  transition: 0.3s;
+}
+body .hamburger .bun.top .seeds .seed.s1 {
+  transform: translate(-130px, 45px) rotate(31deg);
+}
+body .hamburger .bun.top .seeds .seed.s1 a {
+  transform: rotate(-31deg);
+}
+body .hamburger .bun.top .seeds .seed.s2 {
+  transform: translate(-85px, 78px) rotate(17deg);
+}
+body .hamburger .bun.top .seeds .seed.s2 a {
+  transform: rotate(-17deg);
+}
+body .hamburger .bun.top .seeds .seed.s3 {
+  transform: translate(-53px, -44px) rotate(23deg);
+}
+body .hamburger .bun.top .seeds .seed.s3 a {
+  transform: rotate(-23deg);
+}
+body .hamburger .bun.top .seeds .seed.s4 {
+  transform: translateY(-25px);
+}
+body .hamburger .bun.top .seeds .seed.s5 {
+  transform: translate(48px, 14px) rotate(-9deg);
+}
+body .hamburger .bun.top .seeds .seed.s5 a {
+  transform: rotate(9deg);
+}
+body .hamburger .bun.top .seeds .seed.s6 {
+  transform: translate(100px, -72px) rotate(-28deg);
+}
+body .hamburger .bun.top .seeds .seed.s6 a {
+  transform: rotate(28deg);
+}
+body .hamburger .bun.top .seeds .seed.s7 {
+  transform: translate(144px, -15px) rotate(-15deg);
+}
+body .hamburger .bun.top .seeds .seed.s7 a {
+  transform: rotate(15deg);
+}
+body .hamburger .bun.bot {
+  transform-origin: top right;
+  border-bottom-right-radius: 400px;
+  border-bottom-left-radius: 400px;
+}
+body .hamburger .mid {
+  z-index: 1;
+  height: 22px;
+  width: 370px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+body .hamburger .mid.History {
+  transform-origin: center right;
+  background-color: #72ba60;
+}
+body .hamburger .mid.burger {
+  background-color: #8e6b41;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .hamburger .mid.References {
+  transform-origin: center right;
+  background-color: #d06767;
+}
+body .hamburger a {
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+}
+body .hamburger a.menu_link {
+  z-index: 0;
+  position: absolute;
+  transform-origin: center center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  transition: 0.3s;
+}
+body .hamburger a.menu_link.menu_1 {
+  transform: translate(170px, -40px) scale(0);
+}
+body .hamburger a.menu_link.menu_2 {
+  transform: translate(170px, -18px) scale(0);
+}
+body .hamburger a.menu_link.menu_3 {
+  transform: translate(170px, 18px) scale(0);
+}
+body .hamburger a.menu_link.menu_4 {
+  transform: translate(170px, 40px) scale(0);
+}
+body .hamburger.open_top .bun.top .seeds .seed a {
+  opacity: 1;
+  pointer-events: initial;
+}
+body .hamburger.open_top .bun.top .seeds .seed.s1 {
+  transform: translate(-180px, -20px) rotate(31deg);
+}
+body .hamburger.open_top .bun.top .seeds .seed.s2 {
+  transform: translate(-205px, 51px) rotate(17deg);
+}
+body .hamburger.open_top .bun.top .seeds .seed.s3 {
+  transform: translate(-108px, -113px) rotate(23deg);
+}
+
+body .hamburger.open_side .bun.top {
+  transform: rotate(30deg);
+}
+body .hamburger.open_side .bun.bot {
+  transform: rotate(-30deg);
+}
+body .hamburger.open_side .mid.salad {
+  transform: rotate(15deg);
+}
+body .hamburger.open_side .mid.tomato {
+  transform: rotate(-15deg);
+}
+body .hamburger.open_side a.menu_link.menu_1 {
+  transform: translate(-115px, -160px) scale(1) rotate(22.5deg);
+}
+body .hamburger.open_side a.menu_link.menu_2 {
+  transform: translate(-145px, -60px) scale(1) rotate(7.5deg);
+}
+body .hamburger.open_side a.menu_link.menu_3 {
+  transform: translate(-145px, 60px) scale(1) rotate(-7.5deg);
+}
+body .hamburger.open_side a.menu_link.menu_4 {
+  transform: translate(-115px, 160px) scale(1) rotate(-22.5deg);
+}
