@@ -1,6 +1,10 @@
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: "Bungee", sans-serif;
   color: #f1f1f1;
+  text-decoration: none;
 }
 
 body {
@@ -16,7 +20,6 @@ body h1 {
   line-height: 1;
   text-align: center;
 }
-
 body .hamburger {
   display: flex;
   flex-direction: column;
@@ -121,7 +124,7 @@ body .hamburger .mid {
   border-radius: 50px;
   transition: 0.3s;
 }
-body .hamburger .mid.History {
+body .hamburger .mid.salad {
   transform-origin: center right;
   background-color: #72ba60;
 }
@@ -133,7 +136,7 @@ body .hamburger .mid.burger {
   align-items: center;
   justify-content: center;
 }
-body .hamburger .mid.References {
+body .hamburger .mid.tomato {
   transform-origin: center right;
   background-color: #d06767;
 }
@@ -175,7 +178,18 @@ body .hamburger.open_top .bun.top .seeds .seed.s2 {
 body .hamburger.open_top .bun.top .seeds .seed.s3 {
   transform: translate(-108px, -113px) rotate(23deg);
 }
-
+body .hamburger.open_top .bun.top .seeds .seed.s4 {
+  transform: translateY(-105px);
+}
+body .hamburger.open_top .bun.top .seeds .seed.s5 {
+  transform: translate(160px, -85px) rotate(-9deg);
+}
+body .hamburger.open_top .bun.top .seeds .seed.s6 {
+  transform: translate(113px, -165px) rotate(-28deg);
+}
+body .hamburger.open_top .bun.top .seeds .seed.s7 {
+  transform: translate(217px, -49px) rotate(-15deg);
+}
 body .hamburger.open_side .bun.top {
   transform: rotate(30deg);
 }

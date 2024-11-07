@@ -1,12 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-	document.querySelector("#menu").addEventListener("click", () => {
-	   document.querySelector("#hamburger").classList.toggle("open_side");
-	   document.querySelector("#hamburger").classList.remove("open_top");
-	});
- 
-	document.querySelector("#locations").addEventListener("click", () => {
-	   document.querySelector("#hamburger").classList.toggle("open_top");
-	   document.querySelector("#hamburger").classList.remove("open_side");
-	});
- });
- 
+
+document.getElementById("menu").addEventListener("click", () => {
+  const hamburger = document.getElementById("hamburger");
+  hamburger.classList.toggle("open_side");
+  hamburger.classList.remove("open_top");
+});
+
+document.getElementById("locations").addEventListener("click", () => {
+  const hamburger = document.getElementById("hamburger");
+  hamburger.classList.toggle("open_top");
+  hamburger.classList.remove("open_side");
+});
