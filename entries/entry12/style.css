@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  width: calc(min(47rem, 90%));
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-block: min(20vh, 3rem);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.swiper-container {
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  padding: 60px 0 95px 0;
+}
+
+.swiper-slide {
+  width: 10rem;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: -1px 5px 15px #0000001f;
+}
+
+.swiper-slide h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.swiper-slide p {
+  font-size: 0.8rem;
+  background-color: #cccccc;
+  padding: 0.5rem;
+}
+.swiper-slide--one {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Baozi_Chengdu.JPG/500px-Baozi_Chengdu.JPG");
+}
+
+.swiper-slide--two {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Ph%E1%BB%9F_b%C3%B2_%2839425047901%29.jpg/400px-Ph%E1%BB%9F_b%C3%B2_%2839425047901%29.jpg");
+}
+
+.swiper-slide--three {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/2018_01_Croissant_IMG_0685.JPG/540px-2018_01_Croissant_IMG_0685.JPG");
+}
+
+.swiper-slide--four {
+  background-image: url("https://as1.ftcdn.net/v2/jpg/03/37/54/34/1000_F_337543417_lpoQnVEMtmeaMRLA0BkcoCryCKgKYZS9.jpg");
+}
+
+.swiper-slide--five {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Idli_Sambar.JPG/440px-Idli_Sambar.JPG");
+}
+
+.swiper-slide--six {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/FOOD_Chilaquiles_1.jpg/440px-FOOD_Chilaquiles_1.jpg");
+}
+
+.swiper-slide--seven {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Cheeseburger_at_Louis%27_Lunch%2C_New_Haven.jpg/440px-Cheeseburger_at_Louis%27_Lunch%2C_New_Haven.jpg");
+}
+
+.swiper-slide--nine {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Norwegian.open.sandwich-01.jpg/500px-Norwegian.open.sandwich-01.jpg");
+}
+
+.swiper-slide--ten {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/500px-Pizza-3007395.jpg");
+}
+
+.swiper-slide--eleven {
+  background-image: url("https://i5.walmartimages.com/seo/Mainstays-Basic-Indoor-8-78-Gray-Analog-Round-Modern-Wall-Clock_46650c90-3fb2-48dd-a632-dc9b1e21d2da.25eb625bd653bcef3952591e4d9611fd.jpeg");
+}
+
+.swiper-button-prev, .swiper-button-next {
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.17);
+  top: 47%;
+}

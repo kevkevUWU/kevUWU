@@ -1,0 +1,90 @@
+body {
+    font-family: 'Patrick Hand', cursive, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #6b8e23;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px; /* Space between text and image */
+}
+
+/* Individual section background colors */
+.about {
+    background-color: #ffebcd; /* Light color for About section */
+}
+
+.recipe {
+    background-color: #e6e6fa; /* Lavender color for Recipe section */
+}
+
+.benefits {
+    background-color: #fffacd; /* Lemon Chiffon color for Benefits section */
+}
+
+.contact {
+    background-color: #ffe4e1; /* Misty Rose color for Contact Us section */
+}
+
+/* Hover effects */
+.flex-container:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Lighten the background */
+    transform: scale(1.02); /* Slightly scale up */
+}
+
+h2 {
+    color: #4a4a4a;
+}
+
+img {
+    max-width: 400px; /* Fixed width for the images */
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
