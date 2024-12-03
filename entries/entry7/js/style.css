@@ -146,7 +146,6 @@ body .hamburger a {
   user-select: none;
 }
 body .hamburger a.menu_link {
-  z-index: 0;
   position: absolute;
   transform-origin: center center;
   font-family: "Work Sans", sans-serif;
@@ -213,4 +212,27 @@ body .hamburger.open_side a.menu_link.menu_3 {
 }
 body .hamburger.open_side a.menu_link.menu_4 {
   transform: translate(-115px, 160px) scale(1) rotate(-22.5deg);
+}
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  body h1 {
+    font-size: 32px; 
+  }
+
+  body .hamburger {
+    height: auto; 
+    width: 90%; 
+  }
+
+  body .hamburger .bun {
+    height: 120px; 
+    width: 300px;
+  }
+
+  body .hamburger a.menu_link {
+    font-size: 14px; 
+  }
 }
