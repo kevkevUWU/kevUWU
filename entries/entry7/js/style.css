@@ -146,6 +146,7 @@ body .hamburger a {
   user-select: none;
 }
 body .hamburger a.menu_link {
+  z-index: 0;
   position: absolute;
   transform-origin: center center;
   font-family: "Work Sans", sans-serif;

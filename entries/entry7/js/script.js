@@ -40,7 +40,9 @@ document.querySelectorAll(".bun.top .seed").forEach(seed => {
         break;
 
     }
-  
+    if (url) {
+      window.location.href = url;
+    }
   });
   
 });
@@ -49,10 +51,10 @@ document.querySelector(".menu_link.menu_1").addEventListener("click", () => {
 });
 
 document.querySelector(".menu_link.menu_2").addEventListener("click", () => {
-  window.location.href = "https://en.wikipedia.org/wiki/History_of_the_hamburger";
+  window.location.href = "https://en.wikipedia.org/wiki/History_of_hamburgers";
 });
 
 
 document.querySelector(".menu_link.menu_4").addEventListener("click", () => {
-  window.location.href = "https://kevkevuwu.github.io/kevUWU/entries/entry12/index.html";
+  window.location.href = "https://www.breakfastideas.com";
 });
